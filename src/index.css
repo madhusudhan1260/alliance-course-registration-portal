@@ -1,0 +1,301 @@
+/* ---------- Basic reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 28px;
+  color: #1e3a8a;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 32px;
+  background: #1e3a8a;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 22px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #fbbf24;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: 2px solid #2563eb;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.btn:disabled {
+  background: #93a3c4;
+  border-color: #93a3c4;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: #ffffff;
+  color: #2563eb;
+}
+
+.btn-outline:hover {
+  background: #eff6ff;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ---------- Home page ---------- */
+.hero {
+  text-align: center;
+  background: #ffffff;
+  padding: 60px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.hero h1 {
+  color: #1e3a8a;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Course cards ---------- */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 10px;
+  border-top: 4px solid #2563eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.course-card h3 {
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.course-card p {
+  margin-bottom: 6px;
+}
+
+.course-card .btn {
+  margin-top: 12px;
+}
+
+/* ---------- Registration form ---------- */
+.form-wrapper {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.register-form {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.input-error {
+  border-color: #dc2626 !important;
+}
+
+/* ---------- Error messages ---------- */
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.api-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+  padding: 14px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.api-error .btn {
+  margin-top: 10px;
+}
+
+/* ---------- Loading ---------- */
+.loading {
+  text-align: center;
+  color: #2563eb;
+  font-size: 17px;
+}
+
+/* ---------- Success page ---------- */
+.success-card {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 36px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+.success-card h2 {
+  color: #16a34a;
+  margin-bottom: 20px;
+}
+
+.details {
+  text-align: left;
+  background: #f8fafc;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.details p {
+  margin-bottom: 8px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 16px;
+  background: #1e293b;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+}

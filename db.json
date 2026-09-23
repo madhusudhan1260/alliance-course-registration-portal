@@ -1,0 +1,53 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Advanced Java Programming",
+      "code": "CSE301",
+      "credits": 4
+    },
+    {
+      "id": "2",
+      "name": "Data Structures and Algorithms",
+      "code": "CSE302",
+      "credits": 4
+    },
+    {
+      "id": "3",
+      "name": "Database Management Systems",
+      "code": "CSE303",
+      "credits": 3
+    },
+    {
+      "id": "4",
+      "name": "Computer Networks",
+      "code": "CSE304",
+      "credits": 3
+    },
+    {
+      "id": "5",
+      "name": "Web Technologies",
+      "code": "CSE305",
+      "credits": 3
+    }
+  ],
+  "registrations": [
+    {
+      "studentName": "Madhusudhan",
+      "email": "madhuusudhann01@gmail.com",
+      "rollNumber": "2411021061260",
+      "phone": "7989780686",
+      "course": "Advanced Java Programming",
+      "id": "MDoZIg4NnZA"
+    },
+    {
+      "studentName": "Madhusudhan",
+      "email": "madhuusudhann01@gmail.com",
+      "rollNumber": "2411021061260",
+      "phone": "7989780686",
+      "course": "Advanced Java Programming",
+      "id": "qhLtAv1hBI0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
